@@ -1,0 +1,30 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background: $totalDark;
+    .boxFooter {
+        display: flex;
+
+        margin: 4px;
+        padding: 10px;
+        width: 220px;
+        height: 60px;
+        &:hover {
+            border-bottom: 2px solid $totalGold;
+        }
+        .logoFooter {
+            width: 40%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .linkFooter {
+            padding-top: 10px;
+            width: 60%;
+            font-size: 2.8rem;
+            color: $totalGold;
+            text-decoration: none;
+        }
+    }
+}

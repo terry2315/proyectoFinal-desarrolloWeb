@@ -1,0 +1,30 @@
+//Media Queries
+
+@media screen and (max-width:660px) {
+    aside {
+        display: none;
+    }
+
+    section {
+        width: 100vw;
+    } 
+
+    iframe {
+        width: 340px;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100vw;
+        .boxFooter {
+            margin: 0 auto;
+        }
+    }
+    .contentItemHistory {
+        flex-direction: column;
+        height: 540px;
+    }
+    .itemImgHistory {
+        margin: 0 auto;
+    }
+}

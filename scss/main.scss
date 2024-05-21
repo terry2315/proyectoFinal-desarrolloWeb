@@ -1,0 +1,289 @@
+main {
+    grid-area: main;
+    display: flex;
+    aside {
+        padding-top: 38px;
+        width: 16vw;
+        min-width: 320px;
+        border-right: 4px solid $totalDark;
+        background: $lightDark;
+        overflow: auto;
+        .boxSubtitleAside {
+            text-align: center;
+            margin: 0 auto;
+            width: 60%;
+            background: $totalDark;
+            box-shadow: -10px 10px 10px;
+            @include styleBorde;
+            .subtitleAside {
+                font-size: 3.2rem;
+                color: $totalGold;
+            }
+        }
+        .cardAside {
+            margin: 30px auto;
+            width: 80%;
+            height: 140px;
+            overflow: hidden;
+            box-shadow: -20px 20px 20px;
+            &:hover {
+                @include styleBorde;
+                box-shadow: -10px 10px 10px $totalGold;
+            }
+            .imgAside {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    section {
+        padding: 10px;
+        width: 100vw;
+        background: $lightDark;
+        .boxTitleSection {
+            text-align: center;
+            margin: 28px auto;
+            padding: 10px;
+            width: 68%;
+            font-size: 2.6rem;
+            color: $totalGold;
+            background: $totalDark;
+            box-shadow: -20px 20px 20px $totalDark;
+            @include styleBorde;
+            .subTitleSection {
+                color: $totalGold;
+                .description {
+                    line-height: 2.8rem;
+                    color: $totalGold;
+                }
+            }
+        }
+        .contentItems {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .cardItem {
+                margin: 10px;
+                width: 300px;
+                height: 400px;
+                background: $totalDark;
+                box-shadow: -20px 20px 20px;
+                border-radius: 10px;
+                &:hover {
+                    border: 2px solid $totalGold;
+                    box-shadow: -5px 5px 5px $totalGold;
+                }
+                .subtitleitems {
+                    text-align: center;
+                    margin: 10px;
+                    font-size: 2.8rem;
+                    color: $totalGold;
+                }
+                .boxItemImg {
+                    width: 300px;
+                    height: 200px;
+                    .cardItemImg {
+                        width: 98%;
+                        height: 100%;
+                    }
+                }
+                .textCard {
+                    text-align: center;
+                    margin: 10px;
+                    font-size: 2.8rem;
+                    color: $totalGold;
+                    @include styleBorde;
+                }
+            }
+        }
+    }
+}
+
+//Historia
+
+.boxHistory {
+    flex-direction: column;
+    background: $lightDark;
+    .contentItemHistory {
+        display: flex;
+        margin: 30px auto;
+        padding: 10px;
+        width: 90%;
+        height: 440px;
+        background: $totalDark;
+        box-shadow: -20px 20px 20px;
+        @include styleBorde;
+        .itemImgHistory {
+            width: 40%;
+            max-height:340px;
+            min-width: 260px;
+            .imgHistory {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .itemTextHistory {
+            margin: 10px;
+            text-align: center;
+            max-height: 340px;
+            font-size: 2.8rem;
+            line-height: 3.2rem;
+            color: $totalGold;
+            overflow: auto;
+        }
+        .nameMarca {
+            margin: 10px;
+        }
+    }
+}
+
+//Galeria
+
+.contentItemsGallery {
+    flex-wrap: wrap;
+    background: $lightDark;
+    .itemsImg {
+        margin: 10px auto;
+        width: 340px;
+        height: 300px;
+        background: $totalDark;
+        box-shadow: -10px 10px 10px;
+        overflow: hidden;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: -5px 5px 5px $totalGold;
+            @include styleBorde;
+        }
+        .boxImgGallery {
+            width: 398px;
+            height: 340px;
+            .imgGallery {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nameGallery {
+            text-align: center;
+            padding: 6px;
+            h3 {
+                font-size: 3.2rem;
+                color: $totalGold;
+            }
+        }
+    }
+}
+
+//Videos
+
+.contentVideo {
+    flex-wrap: wrap;
+    padding: 20px;
+    background: $lightDark;
+    .descriptionVideo {
+        margin: 20px auto;
+        width: 260px;
+        background: $totalDark;
+        @include styleBorde;
+        h2 {
+            text-align: center;
+            font-size: 4.2rem;
+            color: $totalGold;
+        }
+    }
+    .contentVideos {
+        text-align: center;
+        iframe {
+            margin: 10px auto;
+            padding: 4px;
+            background: $totalDark;
+            box-shadow: -10px 10px 10px;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: -5px 5px 5px $totalGold;
+            }
+        }
+    }
+}
+
+
+//Cuenta
+
+.contentForms {
+    margin: 0 auto;
+
+    width: 80%;
+    min-width: 320px;
+    padding-bottom: 40px;
+    background: $lightDark;
+    box-shadow: -10px 10px 10px;
+    .boxForm {
+        text-align: center;
+        width: 100%;
+        .boxTitleSection {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            background: $totalDark;
+            box-shadow: -20px 20px 20px;
+            @include styleBorde;
+            .subTitleSection {
+                margin: 10px auto;
+                font-size: 3.2rem;
+                color: $totalGold;
+            }
+        }
+        .mb-3 {
+            text-align: center;
+            margin: 60px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            background: $totalDark;
+            overflow: hidden;
+            box-shadow: -20px 20px 20px;
+            @include styleBorde;
+            .form-label {
+                display: block;
+                width: 90%;
+                height: 40px;
+                font-size: 3.2rem;
+                color:$totalGold;
+            }
+            .form-control {
+                width: 90%;
+                height: 40px;
+                font-size: 2.2rem;
+                color: $totalDark;
+                border-radius: 10px;
+            }
+        }
+        .button {
+            margin: 0 auto;
+            width: 200px;
+            height: 40px;
+            font-size: 2.2rem;
+            color: $totalGold;
+            background: $totalDark;
+            box-shadow:  -10px 10px 10px $totalDark;
+            @include styleBorde;
+            &:hover {
+                box-shadow: -5px 5px 5px;
+            }
+            &:active {
+                transform: scale(1.1);
+            }
+        }
+        .registro {
+            margin: 10px;
+            font-size: 3.2rem;
+            color: $totalGold;
+            a {
+                color: red;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
